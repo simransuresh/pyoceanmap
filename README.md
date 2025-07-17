@@ -11,6 +11,14 @@ Central Arctic ocean mapping from UDASH[2] hydrographic observations to show lar
 CASE 2:
 Antarctic/Southern ocean mapping from Argo float measurements[3] to show the Weddell and Ross Gyre. 
 
+
+PROCEDURE TO RUN:
+if you readily have the csv files with [lat, lon, DH or FWC] -> data_points.csv stored 
+  - Start with driver.py 
+else 
+  - Start with write_hydr_csv.py, dynamic_height.py or freshwater.py depending on the variable to map and then to driver.py
+
+
 [1] Rabe, B., Karcher, M., Schauer, U., Toole, J. M., Krishfield, R.A., Pisarev, S., Kauker, F., Gerdes, R., and Kikuchi, T.: An assessment of arctic ocean freshwater content changes from the 1990s to the 2006–2008 period, Deep-Sea Res. Pt. I, 58, 173–185, https://doi.org/10.1016/j.dsr.2010.12.002, 2011.
 
 [2] Behrendt, A., Sumata, H., Rabe, B., and Schauer, U.: UDASH – Unified Database for Arctic and Subarctic Hydrography, Earth Syst. Sci. Data, 10, 1119–1138, https://doi.org/10.5194/essd-10-1119-2018, 2018.
