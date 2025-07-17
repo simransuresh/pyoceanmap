@@ -1,3 +1,11 @@
+"""
+Filename: write_hydr_csv.py
+Author: Simran Suresh
+Date: Sept, 2024
+Description: Reads raw nc file with oceanographic data [date, lat, lon, depth, temp, sal]
+and converts to csv format for pandas ready analysis. 
+"""
+
 import pandas as pd
 import csv
 import netCDF4 as nc

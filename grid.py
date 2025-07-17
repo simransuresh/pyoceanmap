@@ -1,3 +1,11 @@
+"""
+Filename: grid.py
+Author: Simran Suresh
+Date: Sept, 2024
+Description: Forms a grid matrix of 50km resolution in lat lon i.e equal spaced (Lambert
+Equal Area LAEA projection) used in mapping
+"""
+
 import numpy as np
 import pandas as pd
 from mpl_toolkits.basemap import Basemap

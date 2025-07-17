@@ -1,3 +1,12 @@
+"""
+Filename: freshwater.py
+Author: Simran Suresh
+Date: Sept, 2024
+Description: Computes freshwater content in a region using Temp, Salinity, Depth, Pressure
+information at prescribed lat lon from generated csv files (output of write_hydr_csv.py) 
+using specific volume anomaly method. Ref: TEOS10 conventions https://www.teos-10.org
+"""
+
 import pandas as pd
 import gsw
 import numpy as np

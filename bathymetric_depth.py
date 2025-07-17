@@ -1,3 +1,10 @@
+"""
+Filename: bathymetric_depth.py
+Author: Simran Suresh
+Date: Sept, 2024
+Description: From IBCAO bathymetric dataset, read lat lon and depth information and plots it
+"""
+
 import netCDF4 as nc
 import numpy as np
 from pyproj import Proj, transform, Transformer

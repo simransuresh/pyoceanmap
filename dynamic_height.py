@@ -1,3 +1,13 @@
+"""
+Filename: dynamic_height.py
+Author: Simran Suresh
+Date: Sept, 2024
+Description: Computes dynamic height relative to a depth of 400m (chosen arbitarily based on 
+Benjamin Rabe's surface depth assumption) in a region using Temp, Salinity, Depth, Pressure 
+information at prescribed lat lon from generated csv files (output of write_hydr_csv.py) 
+using specific volume anomaly method. Ref: TEOS10 conventions https://www.teos-10.org
+"""
+
 import pandas as pd
 import gsw
 import numpy as np

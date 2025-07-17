@@ -1,3 +1,10 @@
+"""
+Filename: numobs.py
+Author: Simran Suresh
+Date: Dec, 2024
+Description: Plots number of observation points available for mapping each grid point
+"""
+
 import pandas as pd
 import numpy as np
 from scipy.spatial import cKDTree

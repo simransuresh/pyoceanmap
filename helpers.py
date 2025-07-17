@@ -1,3 +1,11 @@
+"""
+Filename: helpers.py
+Author: Simran Suresh
+Date: Oct, 2024
+Description: File with common routines like coriolis force, finding nearest coordinates, 
+signal and noise variances and covariance matrices
+"""
+
 import numpy as np
 from scipy.spatial import cKDTree
 from geopy.distance import geodesic

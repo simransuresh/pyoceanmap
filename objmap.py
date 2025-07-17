@@ -1,3 +1,13 @@
+"""
+Filename: objmap.py
+Author: Simran Suresh
+Date: Oct, 2024
+Description: This file starts the objective mapping process of interpolating point
+observations to grid locations. It has preprocessing steps like outlier elimination, finding
+weight for each observations, selection of points for mapping. 3D interpolation is done in
+space (grid lat lon) and time (monthly)
+"""
+
 import numpy as np
 from helpers import *
 import math

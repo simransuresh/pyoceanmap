@@ -1,8 +1,15 @@
+"""
+Filename: driver.py
+Author: Simran Suresh
+Date: Nov, 2024
+Description: Main driver function for running the objmap.py in parallel processing
+"""
+
 import pandas as pd
 import csv
 from datetime import datetime
 from multiprocessing import Pool
-from mapping.objmap import *
+from objmap import *
 import concurrent.futures
 
 # Read the grid points
@@ -23,77 +30,6 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
     results = list(executor.map(proc, [(row['Latitude'], row['Longitude'],datetime(2015, 1, 1)) for _, row in list(gp.iterrows())]))
 
 output_file = "results/grd_dh_2015_01.csv"  # another run with distance sorted poiints selected within L1 L2
-
-with open(output_file, mode='w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(["Datetime", "Latitude", "Longitude", "Dynamic_Height", "DH_error"])  
-    writer.writerows(results)  
-
-print(f"Results written to {output_file}")
-
-### 
-results = []
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    results = list(executor.map(proc, [(row['Latitude'], row['Longitude'],datetime(2015, 2, 1)) for _, row in list(gp.iterrows())]))
-
-output_file = "results/grd_dh_2015_02.csv"  # another run with distance sorted poiints selected within L1 L2
-
-with open(output_file, mode='w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(["Datetime", "Latitude", "Longitude", "Dynamic_Height", "DH_error"])  
-    writer.writerows(results)  
-
-print(f"Results written to {output_file}")
-
-###
-results = []
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    results = list(executor.map(proc, [(row['Latitude'], row['Longitude'],datetime(2015, 3, 1)) for _, row in list(gp.iterrows())]))
-
-output_file = "results/grd_dh_2015_03.csv"  # another run with distance sorted poiints selected within L1 L2
-
-with open(output_file, mode='w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(["Datetime", "Latitude", "Longitude", "Dynamic_Height", "DH_error"])  
-    writer.writerows(results)  
-
-print(f"Results written to {output_file}")
-
-
-###
-results = []
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    results = list(executor.map(proc, [(row['Latitude'], row['Longitude'],datetime(2015, 4, 1)) for _, row in list(gp.iterrows())]))
-
-output_file = "results/grd_dh_2015_04.csv"  # another run with distance sorted poiints selected within L1 L2
-
-with open(output_file, mode='w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(["Datetime", "Latitude", "Longitude", "Dynamic_Height", "DH_error"])  
-    writer.writerows(results)  
-
-print(f"Results written to {output_file}")
-
-###
-results = []
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    results = list(executor.map(proc, [(row['Latitude'], row['Longitude'],datetime(2015, 5, 1)) for _, row in list(gp.iterrows())]))
-
-output_file = "results/grd_dh_2015_05.csv"  # another run with distance sorted poiints selected within L1 L2
-
-with open(output_file, mode='w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(["Datetime", "Latitude", "Longitude", "Dynamic_Height", "DH_error"])  
-    writer.writerows(results)  
-
-print(f"Results written to {output_file}")
-
-###
-results = []
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    results = list(executor.map(proc, [(row['Latitude'], row['Longitude'],datetime(2015, 6, 1)) for _, row in list(gp.iterrows())]))
-
-output_file = "results/grd_dh_2015_06.csv"  # another run with distance sorted poiints selected within L1 L2
 
 with open(output_file, mode='w', newline='') as file:
     writer = csv.writer(file)

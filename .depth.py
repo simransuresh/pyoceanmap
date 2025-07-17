@@ -1,3 +1,10 @@
+"""
+Filename: depth.py
+Author: Simran Suresh
+Date: Sept, 2024
+Description: Reads depth information from point observations and grid points
+"""
+
 import csv
 import numpy as np
 from scipy.spatial import cKDTree
