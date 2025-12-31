@@ -150,21 +150,4 @@ def tdiff(dates1, dates2=None):
     
     return np.abs(date_diff_matrix)
     
-dp = pd.read_csv('data_points.csv')
-dp_depth = {
-    (row['Latitude'], row['Longitude']): {
-        'depth': row['Depth'],
-    }
-    for _, row in dp.iterrows()
-}
-
-gp = pd.read_csv('grid_50km_nplaea.csv')
-gp_depth = {
-    (row['Latitude'], row['Longitude']): {
-        'depth': row['Depth'],
-    }
-    for _, row in gp.iterrows()
-}
-
-depth_info = dp_depth | gp_depth
 

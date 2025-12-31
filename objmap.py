@@ -10,6 +10,7 @@ space (grid lat lon) and time (monthly)
 
 import numpy as np
 from helpers import *
+from depth import depth_info
 import math
 import random
 import pandas as pd
@@ -23,8 +24,8 @@ phi2 = 0.4
 T = 60
 
 # first all profiles from dynamic_height.py -> dh_2011_2018_deep.csv
-# dp = pd.read_csv('data_points.csv') -> only points within CAO
-dp = pd.read_csv('data_500m.csv')  # takes all >500m profiles for mapping grid points within CAO
+dp = pd.read_csv('data_points.csv') #-> only points within CAO
+#dp = pd.read_csv('data_500m.csv')  # takes all >500m profiles for mapping grid points within CAO
 dp = dp.dropna(subset=['Datetime','Surf_DH'])   # hFW, D_Siso
 hydr_data = {
     (row['Latitude'], row['Longitude']): { 'depth': row['Depth'], 'dt': row['Datetime'], 'dh': float(row['Surf_DH'])}
@@ -170,7 +171,7 @@ def objmap(latg, long, tg):
 gp = pd.read_csv('grid_50km_nplaea.csv') 
 combined_results = pd.DataFrame()
 
-for month in range(1, 13):
+for month in range(1, 2):
     # Set the current timestamp
     t = f"2011-{month:02d}-01"
     

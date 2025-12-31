@@ -20,6 +20,9 @@ import csv
 from helpers import get_g
 from bathymetric_depth import nearest_depth
 
+start_year=2009
+end_year=2015
+
 print('Reading all hydrographic data...')
 hydr_data = {}
 
@@ -55,15 +58,15 @@ def read_data(fname, hydr_data):
     # print(hydr_data)
     return hydr_data
 
-for year in range(1980, 2008):
-    hydr_data = read_data(f'data/pp_UDAH/{year}.csv', hydr_data)
+for year in range(start_year, end_year+1):
+    hydr_data = read_data(f'data/{year}.csv', hydr_data)
 
 print('Done reading all hydrographic data...')
 
 
-fp = open('data_500m_clim.csv', 'w+', newline='')
+fp = open('data_points.csv', 'w+', newline='')
 writer = csv.writer(fp, delimiter=',')
-writer.writerow(['Latitude','Longitude','Depth','Datetime','Surf_DH','D_Siso','hFW'])
+writer.writerow(['Latitude','Longitude','Depth','Datetime','Surf_DH'])
 
 Sref=35
 Siso=34 # isohaline
@@ -98,7 +101,7 @@ for latlon,data in hydr_data.items():
                 # DOT or absolute ssh is the dynamic height at the surface pressure 0dbar
                 hydr_data[latlon]['Surf_DH'] = round(ster_height,5)
 
-                writer.writerow([round(latlon[0], 5),round(latlon[1], 5),nearest_depth(latlon[0],latlon[1]), hydr_data[latlon]['dt'],hydr_data[latlon]['Surf_DH'], np.nan, np.nan])
+                writer.writerow([round(latlon[0], 5),round(latlon[1], 5),nearest_depth(latlon[0],latlon[1]), hydr_data[latlon]['dt'],hydr_data[latlon]['Surf_DH']])
             
             except ValueError as err:
                 print('Setting DH to nan due to error...', latlon, ypres)
