@@ -6,3 +6,11 @@ geopy
 xarray
 basemap
 
+From pangea download UDASH .tab file which contains download links for each year.
+
+THen either download the files from each year whichever required, i did from 2009-2015.
+
+In dynamic_height.py changed the start_year end_year to 2009, 2015 resp.
+
+
+

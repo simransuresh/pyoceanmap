@@ -1,0 +1,55 @@
+/* DATA DESCRIPTION:
+Citation:	Behrendt, Axel; Sumata, Hiroshi; Rabe, Benjamin; Schauer, Ursula (2017): A comprehensive, quality-controlled and up-to-date data set of temperature and salinity data for the Arctic Mediterranean Sea (Version 1.0), links to data files [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.872931, 
+	Supplement to: Behrendt, A et al. (2017): UDASH - Unified Database for Arctic and Subarctic Hydrography. Earth System Science Data Discussions, 37 pp, https://doi.org/10.5194/essd-2017-92
+Abstract:	UDASH is a unified and high-quality temperature and salinity data set for the Arctic Ocean and the subpolar seas north of 65° N for the period 1980-2015. The archive aims at including all publicly available data and so far consists of 288 532 oceanographic profiles measured mainly with conductivity/temperature/depth (CTD) probes, bottles, mechanical thermographs and expendable thermographs. The data were collected by ships, ice-tethered profilers, profiling floats and other platforms. To achieve 5 a uniform quality level, suitable for a wide range of oceanographic analyses, approximately 74 million single measurements of temperature and salinity were thoroughly quality-checked. A large number of duplicate and erroneous profiles were detected and not included into the archive. Data outliers, suspicious gradients and other suspect data were flagged for quick identification. The final archive provides a unique and simple way of accessing most of the available temperature and salinity data for the Arctic Mediterranean Sea.
+Other version:	All data files in one zip archive (777.7 MB, zipped) [dataset]. https://hs.pangaea.de/Projects/UDASH/UDASH.zip
+Project(s):	FRontiers in Arctic marine Monitoring (FRAM) (URI: https://www.awi.de/en/science/research-infrastructure/observatories/ocean-fram.html)
+	Physical Oceanography @ AWI (AWI_PhyOce) (URI: https://www.awi.de/en/science/climate-sciences/physical-oceanography.html)
+Coverage:	LATITUDE: 90.000000 * LONGITUDE: 0.000000
+	DATE/TIME START: 1980-01-01T00:00:00 * DATE/TIME END: 2015-12-31T23:59:00
+Event(s):	pan-Arctic * LATITUDE: 90.000000 * LONGITUDE: 0.000000 * LOCATION: Arctic
+Comment:	PLEASE NOTE: Data files are space-delimited
+Parameter(s):	DATE/TIME (Date/Time) * GEOCODE * PI: Behrendt, Axel (https://orcid.org/0000-0001-5746-1631, axel_beh@web.de)
+	File content (Content) * PI: Behrendt, Axel (https://orcid.org/0000-0001-5746-1631, axel_beh@web.de)
+	File size [kByte] (File size) * PI: Behrendt, Axel (https://orcid.org/0000-0001-5746-1631, axel_beh@web.de) * COMMENT: zipped
+	Uniform resource locator/link to file (URL file) * PI: Behrendt, Axel (https://orcid.org/0000-0001-5746-1631, axel_beh@web.de)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	108 data points
+*/
+Date/Time	Content	File size [kByte]	URL file
+1980	Physical oceanography from the Arctic Ocean in 1980	3291	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1980.zip
+1981	Physical oceanography from the Arctic Ocean in 1981	5456	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1981.zip
+1982	Physical oceanography from the Arctic Ocean in 1982	4271	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1982.zip
+1983	Physical oceanography from the Arctic Ocean in 1983	4492	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1983.zip
+1984	Physical oceanography from the Arctic Ocean in 1984	11331	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1984.zip
+1985	Physical oceanography from the Arctic Ocean in 1985	9095	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1985.zip
+1986	Physical oceanography from the Arctic Ocean in 1986	4780	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1986.zip
+1987	Physical oceanography from the Arctic Ocean in 1987	7316	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1987.zip
+1988	Physical oceanography from the Arctic Ocean in 1988	8298	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1988.zip
+1989	Physical oceanography from the Arctic Ocean in 1989	9377	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1989.zip
+1990	Physical oceanography from the Arctic Ocean in 1990	6494	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1990.zip
+1991	Physical oceanography from the Arctic Ocean in 1991	7109	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1991.zip
+1992	Physical oceanography from the Arctic Ocean in 1992	3994	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1992.zip
+1993	Physical oceanography from the Arctic Ocean in 1993	13413	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1993.zip
+1994	Physical oceanography from the Arctic Ocean in 1994	11905	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1994.zip
+1995	Physical oceanography from the Arctic Ocean in 1995	18242	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1995.zip
+1996	Physical oceanography from the Arctic Ocean in 1996	18752	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1996.zip
+1997	Physical oceanography from the Arctic Ocean in 1997	18739	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1997.zip
+1998	Physical oceanography from the Arctic Ocean in 1998	25786	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1998.zip
+1999	Physical oceanography from the Arctic Ocean in 1999	20834	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_1999.zip
+2000	Physical oceanography from the Arctic Ocean in 2000	15824	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2000.zip
+2001	Physical oceanography from the Arctic Ocean in 2001	22967	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2001.zip
+2002	Physical oceanography from the Arctic Ocean in 2002	25952	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2002.zip
+2003	Physical oceanography from the Arctic Ocean in 2003	29549	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2003.zip
+2004	Physical oceanography from the Arctic Ocean in 2004	22599	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2004.zip
+2005	Physical oceanography from the Arctic Ocean in 2005	34582	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2005.zip
+2006	Physical oceanography from the Arctic Ocean in 2006	55224	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2006.zip
+2007	Physical oceanography from the Arctic Ocean in 2007	80602	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2007.zip
+2008	Physical oceanography from the Arctic Ocean in 2008	91024	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2008.zip
+2009	Physical oceanography from the Arctic Ocean in 2009	57008	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2009.zip
+2010	Physical oceanography from the Arctic Ocean in 2010	50665	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2010.zip
+2011	Physical oceanography from the Arctic Ocean in 2011	47215	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2011.zip
+2012	Physical oceanography from the Arctic Ocean in 2012	53510	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2012.zip
+2013	Physical oceanography from the Arctic Ocean in 2013	27261	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2013.zip
+2014	Physical oceanography from the Arctic Ocean in 2014	14906	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2014.zip
+2015	Physical oceanography from the Arctic Ocean in 2015	8142	https://hs.pangaea.de/Projects/UDASH/ArcticOcean_phys_oce_2015.zip
