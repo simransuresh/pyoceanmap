@@ -57,20 +57,28 @@ the [documentation](https://pyoceanmap.readthedocs.io) for the complete API refe
 - **Dynamic Height (DH)** — from TEOS-10 (via `gsw`)
 - **Freshwater Content (FWC)** [1]
 
-## Case studies
+## Case study: Central Arctic Ocean
 
-**Central Arctic Ocean** — mapping from UDASH [2] hydrographic observations to resolve
-large-scale circulation patterns, the Beaufort Gyre and Transpolar Drift.
+Mapping from UDASH [2] hydrographic observations to resolve large-scale circulation patterns —
+the Beaufort Gyre and Transpolar Drift.
 
-<p float="left">
-  <img src="figures/Observed_vs_Gridded_DH_201101.png" width="49%" alt="Observed vs gridded dynamic height, Jan 2011" />
-  <img src="figures/hfw_2011_2018.png" width="49%" alt="Freshwater content, 2011-2018" />
+**Dynamic height** — sparse observations (left) objectively mapped onto a 50 km grid (right),
+January 2011:
+
+<p align="center">
+  <img src="figures/Observed_vs_Gridded_DH_201101.png" width="90%" alt="Observed vs objectively mapped surface dynamic height, January 2011" />
 </p>
 
-**Southern Ocean** — mapping from Argo float measurements [3] to resolve the Weddell and Ross
-Gyres.
+**Freshwater content** — irregular UDASH observations, 2011–2018 (left) and the objectively
+mapped field for January 2012 (right):
 
-<img src="figures/2012_01_fwc.png" width="49%" alt="Southern Ocean freshwater content, Jan 2012" />
+<p align="center">
+  <img src="figures/hfw_2011_2018.png" width="49%" alt="Observed freshwater content from UDASH profiles, 2011-2018" />
+  <img src="figures/2012_01_fwc.png" width="49%" alt="Objectively mapped freshwater content, January 2012" />
+</p>
+
+The same objective mapping method has also been applied to the **Southern Ocean** — gridding
+upper-ocean hydrographic properties in the Weddell Gyre from Argo float measurements [3].
 
 ## Citation
 
@@ -79,13 +87,13 @@ and the accompanying JOSS paper at [`paper/paper.md`](paper/paper.md).
 
 ## AI Usage Disclosure
 
-The core scientific and numerical code (hydrographic preprocessing, TEOS-10 dynamic
-height/freshwater calculations, grid generation, bathymetric integration, and the
-physics-informed objective mapping algorithm) was designed and written entirely by the author
-without AI assistance. AI assistance (Claude Code, Anthropic) was used for the software
-engineering pass that prepared this repository for JOSS submission — packaging, tests, CI,
-documentation, and this README/paper text — under the author's direction and review. See
-[`paper/paper.md`](paper/paper.md) for the full disclosure.
+The core scientific and numerical code in this package — hydrographic data preprocessing,
+TEOS-10-based dynamic height and freshwater content calculations, grid generation, bathymetric
+integration, and the physics-informed objective mapping algorithm (potential-vorticity- and
+bathymetry-aware covariance modeling) — was designed and written entirely by the author without
+AI assistance. AI assistance (Claude Code, Anthropic) was used for restructuring the prototype
+into an installable package, configuring Sphinx documentation, and rephrasing the paper and this
+README, all under the author's direction and review.
 
 ## License
 
