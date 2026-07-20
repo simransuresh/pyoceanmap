@@ -25,12 +25,17 @@ def build_depth_info(data_csv, grid_csv):
     Returns
     -------
     dict
-        Mapping from (Latitude, Longitude) to {"depth": float}.
+        Mapping from (round(Latitude, 5), round(Longitude, 5)) to
+        {"depth": float}. Keys are rounded to 5 decimal places to match the
+        lookup performed in :func:`pyoceanmap.utils.PV_mat`; grid coordinates
+        produced by map projections carry full floating-point precision, so
+        an unrounded key here would never match the rounded lookup and every
+        grid-point depth would silently resolve to NaN.
     """
     df = pd.concat([pd.read_csv(data_csv), pd.read_csv(grid_csv)])
 
     return {
-        (row["Latitude"], row["Longitude"]): {"depth": row["Depth"]}
+        (round(row["Latitude"], 5), round(row["Longitude"], 5)): {"depth": row["Depth"]}
         for _, row in df.iterrows()
     }
 

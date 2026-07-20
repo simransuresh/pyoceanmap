@@ -1,3 +1,10 @@
+# pyoceanmap: large/raw/generated data, never committed
+/data/*.txt
+/data/*.zip
+/data_preparation/*.nc
+/examples/output/
+*.egg-info/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

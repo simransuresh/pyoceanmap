@@ -35,8 +35,10 @@ observable onto the grid:
        observable="Surf_DH",
    )
 
-See ``examples/workflow.py`` and ``examples/end2end_demo.ipynb`` in the
-repository for a complete, runnable version of this pipeline.
+``examples/tutorial_synthetic.py`` runs this entire pipeline on a small
+synthetic dataset with no external downloads -- a good first thing to try
+after installing. ``examples/workflow.py`` and ``examples/end2end_demo.ipynb``
+show the same pipeline on the real Arctic UDASH / IBCAO data.
 
 Freshwater content
 -------------------

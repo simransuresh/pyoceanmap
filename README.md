@@ -48,9 +48,17 @@ objective_map(
 )
 ```
 
-See [`examples/workflow.py`](examples/workflow.py) and
-[`examples/end2end_demo.ipynb`](examples/end2end_demo.ipynb) for a full runnable pipeline, and
-the [documentation](https://pyoceanmap.readthedocs.io) for the complete API reference.
+**Try it with no data downloads:** [`examples/tutorial_synthetic.py`](examples/tutorial_synthetic.py)
+fabricates a small synthetic dataset and runs the entire pipeline (merge → dynamic height → grid
+→ bathymetry → objective map → plot) in a few seconds:
+
+```bash
+python examples/tutorial_synthetic.py   # writes examples/output/tutorial_dh.png
+```
+
+For the real Arctic UDASH / IBCAO workflow see [`examples/workflow.py`](examples/workflow.py) and
+[`examples/end2end_demo.ipynb`](examples/end2end_demo.ipynb), and the
+[documentation](https://pyoceanmap.readthedocs.io) for the complete API reference.
 
 ## Variables
 
