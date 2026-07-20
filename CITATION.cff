@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pyoceanmap: Physics-informed objective mapping of sparse in-situ ocean observations"
+authors:
+  - family-names: Suresh
+    given-names: Simran
+    orcid: "https://orcid.org/0009-0004-0477-1600"
+    affiliation: "University of Graz, Austria"
+version: 1.0.0
+date-released: "2026-07-17"
+repository-code: "https://github.com/simransuresh/pyoceanmap"
+license: BSD-3-Clause
+# TODO(author): once a GitHub Release is cut and archived on Zenodo, replace
+# the placeholder DOI below with the real concept DOI from Zenodo, and update
+# the DOI badge in README.md to match.
+doi: 10.5281/zenodo.XXXXXXX

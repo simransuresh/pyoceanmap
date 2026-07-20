@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyoceanmap"
+version = "1.0.0"
+description = "Physics-informed objective mapping of sparse in-situ ocean observations onto user-defined grids"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Simran Suresh", email = "simransuresh410@gmail.com" }
+]
+keywords = ["oceanography", "objective mapping", "gridding", "interpolation", "hydrography"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "gsw",
+    "netCDF4",
+    "pyproj",
+    "geopy",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+docs = ["sphinx", "sphinx-rtd-theme", "myst-parser"]
+
+[project.urls]
+Homepage = "https://github.com/simransuresh/pyoceanmap"
+Documentation = "https://pyoceanmap.readthedocs.io"
+Issues = "https://github.com/simransuresh/pyoceanmap/issues"
+
+[tool.setuptools.packages.find]
+include = ["pyoceanmap*"]
